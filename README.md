@@ -30,7 +30,7 @@ The PyTorch Lighting framework already handles most of the bookkeeping (model sa
 
 In order to manually trigger a preemption execute: `scontrol requeue job_id`. The job will get requeued and once it restarts should resume training. You can test preemption and make yourself familiar with the example code provided with this tutorial.
 
-Each project has a unique structure with different frameworks, visualizations (Visdom vs. TensorBoard), ways of loading configuration parameters. Therefore it is required for you do adapt your code accordingly. For a full resumption of your training you should consider the following:
+Each project has a unique structure with different frameworks, visualizations (Visdom vs. TensorBoard) and ways of loading configuration parameters. Therefore it is required for you do adapt your code accordingly. For a full resumption of your training you should consider the following:
 
 1. Model state
 2. Optimizer and scheduler states
