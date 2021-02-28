@@ -2,7 +2,11 @@
 
 This repository demonstrates the submission of Slurm jobs with an `*.sbatch` file or the Submitit Python tool. To this end, we provide a [PyTorch Lighting](https://github.com/PyTorchLightning/pytorch-lightning) MNIST example.
 
-The example in `src/train.py` can be submitted by executing: `sbatch slurm_submit.sbatch`. The submission configuration is located on the top of an `*.sbatch` script. Further configuration options can be found [here](https://slurm.schedmd.com/sbatch.html).
+In order to submit the example in `src/train.py` follow:
+1. Install Python packages with `pip3 install -r requirements.txt`
+2. Submit to Slurm with `sbatch slurm_submit.sbatch`
+
+The submission configuration is located on the top of an `*.sbatch` script. Further configuration options can be found [here](https://slurm.schedmd.com/sbatch.html).
 
 ## Multi-GPU training with Submitit
 
