@@ -23,7 +23,8 @@ Setting `--cluster debug` starts the job locally and allows for testing/debuggin
 
 ## Preemption
 
-Slurm supports job preemption, the act of "stopping" one or more "low-priority" jobs to let a "high-priority" job run. When a job that can preempt others has allocated resources that are already allocated to one or more jobs that could be preempted by the first job, the preemptable job(s) are preempted.
+> Slurm supports job preemption, the act of "stopping" one or more "low-priority" jobs to let a "high-priority" job run. When a job that can preempt others has allocated resources that are already allocated to one or more jobs that could be preempted by the first job, the preemptable job(s) are preempted.
+> [Offcial Slurm webpage](https://slurm.schedmd.com/preempt.html)
 
 The PyTorch Lighting framework already handles most of the bookkeeping (model saving, logging, and resuming) on its own. However, for this example we very briefly demonstrate how a codebase can be adapted to check for an existing model and reload it upon preemption, i.e., restart.
 
