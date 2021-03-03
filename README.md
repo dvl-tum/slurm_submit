@@ -38,3 +38,8 @@ Each project has a unique structure with different frameworks, visualizations (V
 4. Visualization
 
 We might add examples for specific resumption scenarios.
+
+## Tips and tricks
+
+- Show used GPUs per node (Each of our 3 partitions lists each node separately): `sinfo -N -O nodelist,gresused:100`
+- Direct node/gpu access (for debugging only) with the `--pty` flag. For example with `srun --pty --nodelist=node13 --gres=gpu:1 zsh`.
